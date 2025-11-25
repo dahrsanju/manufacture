@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+/* FlowSense Brand Theme */
+
+:root {
+  /* Base colors */
+  --background: #ffffff;
+  --foreground: #0f172a;
+
+  /* Primary - FlowSense Blue */
+  --primary: #3B82F6;
+  --primary-foreground: #ffffff;
+  --primary-50: #eff6ff;
+  --primary-100: #dbeafe;
+  --primary-500: #3B82F6;
+  --primary-600: #2563eb;
+  --primary-700: #1d4ed8;
+
+  /* Brand colors */
+  --brand-primary: #3B82F6;
+  --brand-dark: #0B0B0B;
+  --brand-dark-alt: #111827;
+
+  /* Secondary - Slate */
+  --secondary: #64748b;
+  --secondary-foreground: #ffffff;
+
+  /* Accent - Cyan */
+  --accent: #06b6d4;
+  --accent-foreground: #ffffff;
+
+  /* Destructive - Red */
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  /* Success - Green */
+  --success: #22c55e;
+  --success-foreground: #ffffff;
+
+  /* Warning - Amber */
+  --warning: #f59e0b;
+  --warning-foreground: #000000;
+
+  /* Muted */
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+
+  /* Card */
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+
+  /* Border */
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #2563eb;
+
+  /* Radius */
+  --radius: 0.5rem;
+
+  /* Sidebar */
+  --sidebar-width: 280px;
+  --sidebar-collapsed-width: 80px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-dark-alt: var(--brand-dark-alt);
+  --font-sans: var(--font-inter);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 4px);
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0B0B0B;
+    --foreground: #f8fafc;
+
+    --primary: #3B82F6;
+    --primary-foreground: #ffffff;
+
+    --secondary: #475569;
+    --secondary-foreground: #f8fafc;
+
+    --muted: #1e293b;
+    --muted-foreground: #94a3b8;
+
+    --card: #111827;
+    --card-foreground: #f8fafc;
+
+    --border: #334155;
+    --input: #334155;
+  }
+}
+
+/* Base styles */
+* {
+  border-color: var(--border);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}

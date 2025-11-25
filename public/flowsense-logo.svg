@@ -1,0 +1,16 @@
+<svg width="420" height="120" viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- FS Monogram -->
+  <path d="M20 20 H110 V35 H55 V55 H105 V70 H55 V100 H35 V35 H20 Z" fill="black"/>
+
+  <!-- Brand Name -->
+  <text x="140" y="55" font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="40" font-weight="600" fill="black">
+    FlowSense
+  </text>
+
+  <!-- Tagline -->
+  <text x="140" y="85" font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="22" fill="black">
+    Smart Manufacturing. Simplified.
+  </text>
+</svg>
